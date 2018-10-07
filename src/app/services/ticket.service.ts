@@ -48,4 +48,5 @@ export class TicketService {
   summary(){
     return this.http.get(`${HELP_DESK_API}/api/ticket/summary`);
   }
+
 }
