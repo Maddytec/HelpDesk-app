@@ -1,7 +1,7 @@
 import { HELP_DESK_API } from './helpdesk.api';
 import { User } from './../model/user.model';
 import { Injectable } from '@angular/core';
-import { HttpClient } from 'selenium-webdriver/http';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
