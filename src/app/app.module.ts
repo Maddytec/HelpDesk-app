@@ -1,3 +1,4 @@
+import { DialogService } from './services/dialog-service';
 import { AuthGuard } from './components/security/auth.guard';
 import { UserService } from './services/user.service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -37,6 +38,7 @@ import { UserListComponent } from './components/user-list/user-list.component';
   providers: [
     UserService,
     SharedService,
+    DialogService,
     AuthGuard,
     {
       provide: HTTP_INTERCEPTORS,
