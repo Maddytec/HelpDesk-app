@@ -19,7 +19,7 @@ export class UserNewComponent implements OnInit {
   user = new User('', '', '', '');
   shared: SharedService;
   message: {};
-  ClassCss: {};
+  classCss: {};
 
   constructor(
     private userService: UserService,
@@ -74,10 +74,10 @@ export class UserNewComponent implements OnInit {
   }
 
   private buildClasses(type: string): void {
-    this.ClassCss = {
+    this.classCss = {
       'alert': true
     }
-    this.ClassCss['alert-' + type] = true;
+    this.classCss['alert-' + type] = true;
   }
 
   getFromGroupClass(isInvalid: boolean, isDirty: boolean){
@@ -86,6 +86,6 @@ export class UserNewComponent implements OnInit {
       'has-erro' : isInvalid && isDirty,
       'has-success' : !isInvalid && isDirty
 
-    }
+    };
   }
 }

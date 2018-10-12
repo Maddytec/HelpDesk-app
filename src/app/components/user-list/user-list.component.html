@@ -18,7 +18,7 @@
             </tr>
             <tr *ngFor="let user of listUser">
               <td>{{ user.email }}</td>
-              <td>{{ user.profile }}}</td>
+              <td>{{ user.profile }}</td>
               <td><button class="btn btn-primary" (click)="edit(user.id)">Edit</button></td>
               <td><button class="btn btn-danger" (click)="delete(user.id)">Delete</button></td>
             </tr>
