@@ -107,5 +107,4 @@ export class UserListComponent implements OnInit {
     this.classCss['alert-' + type] = true;
   }
 
-
 }
