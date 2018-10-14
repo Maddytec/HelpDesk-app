@@ -16,8 +16,9 @@ export const ROUTES: Routes = [
     { path : 'user-list', component : UserListComponent, canActivate: [AuthGuard]},
     { path : 'ticket-new', component : TicketNewComponent, canActivate: [AuthGuard]},
     { path : 'ticket-list', component : TicketListComponent, canActivate: [AuthGuard]},
-    { path : 'ticket-new/:id', component : TicketNewComponent, canActivate: [AuthGuard]}
-    
+    { path : 'ticket-new/:id', component : TicketNewComponent, canActivate: [AuthGuard]},
+    { path : 'ticket-detail', component : TicketListComponent, canActivate: [AuthGuard]}
+
 ]
 
 export const routes: ModuleWithProviders = RouterModule.forRoot(ROUTES);
