@@ -1,3 +1,4 @@
+import { TicketDetailComponent } from './components/ticket-detail/ticket-detail.component';
 import { TicketListComponent } from './components/ticket-list/ticket-list.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { AuthGuard } from './components/security/auth.guard';
@@ -17,7 +18,7 @@ export const ROUTES: Routes = [
     { path : 'ticket-new', component : TicketNewComponent, canActivate: [AuthGuard]},
     { path : 'ticket-list', component : TicketListComponent, canActivate: [AuthGuard]},
     { path : 'ticket-new/:id', component : TicketNewComponent, canActivate: [AuthGuard]},
-    { path : 'ticket-detail', component : TicketListComponent, canActivate: [AuthGuard]}
+    { path : 'ticket-detail/:id', component : TicketDetailComponent, canActivate: [AuthGuard]}
 
 ]
 
